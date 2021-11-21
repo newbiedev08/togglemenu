@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description">
+    <meta name="viewport" content="width=device-width" , initial-scale="1">
+    <title>Toggle Bar</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <body>
+      <nav>
+      <ul class="menu" id="colors">
+        <li><a class="menuItem" id="textHome" href="#">Home</a></li>
+        <li><a class="menuItem" id="textRed"  href="#">Red</a></li>
+        <li><a class="menuItem" id="textYellow" href="#">Yellow</a></li>
+        <li><a class="menuItem" id="textOrange" href="#">Orange</a></li>
+            <li><a class="menuItem" id="textBlue" href="#">Blue</a></li>
+                <li><a class="menuItem"  href="#" id="textPurple">Purple</a></li>
+      </ul>
+      <div class="hamburger" onmouseover="">
+
+        <img src="images/download.png" class="menuIcon material-icons" >
+        <img src="images/download.png" class="closeIcon material-icons" >
+      </div>
+
+<div class="buttons" id="colors">
+        <input type="radio" name="colors" id="home-radio" value="white"">
+        <label for="home-btn">Home</label>
+        <input type="radio" name="colors" id="red-radio" value="red"" >
+        <label for="red-btn">Red</label>
+        <input type="radio" name="colors" id="purple-radio" value="purple" onmouseover="bgChange(this.style.backgroundColor)" onmouseout="bgChange('transparent')"
+          style="background-color: purple" >
+        <label for="purple-btn">Purple</label>
+        <input type="radio" name="colors" id="green-radio" value="green" onmouseover=""bgChange(this.style.backgroundColor)" onmouseout="bgChange('transparent')"
+          style="background-color: green" >
+        <label for="green-btn">Green</label>
+        <input type="radio" name="colors" id="yellow-radio" value="yellow" onmouseover=""bgChange(this.style.backgroundColor)" onmouseout="bgChange('transparent')"
+          style="background-color: yellow" >
+        <label for="yellow-btn">Yellow</label>
+      </div>
+</nav>
+
+    </body>
+<script type="text/javascript" src="script.js"> Toggle</script>
+
+</html>
